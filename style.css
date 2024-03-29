@@ -22,13 +22,16 @@ body[theme="cyan"]{
     background-color: var(--cyan);
 }
 body[theme="cyan"] .section{
-    color: var(--dcyan);;
+    color: var(--dcyan);
 }
 body[theme="salmon"]{
     background-color: var(--salmon);
 }
 body[theme="salmon"] .section{
-    color: var(--dsalmon);;
+    color: var(--dsalmon);
+}
+body[theme="salmon"]::selection{
+    color: var(--salmon);
 }
 body[theme="white"]{
     background-color: var(--white);
@@ -36,3 +39,23 @@ body[theme="white"]{
 body[theme="white"] .section{
     color: var(--black);
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.slides::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    transition: background-color ease-out 0.7s;
+}
+
+.video-contn{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+.text h3 span{
+    opacity:0.5
+}
+
