@@ -59,3 +59,29 @@ body{
     opacity:0.5
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1vw 4vw;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+    background-color: transparent;
+}
+.nav h1{
+    font-size: 2vw;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    color: white;
+}
+.nav-links button{
+    color: black;
+    background-color: #ede90ef6;
+    border-radius: 5px;
+    padding: 0.5vw 0.65vw;
+}
